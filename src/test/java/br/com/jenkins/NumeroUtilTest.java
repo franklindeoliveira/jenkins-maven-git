@@ -9,5 +9,10 @@ public class NumeroUtilTest {
 	public void deveSerPar() {
 		Assert.assertTrue(NumeroUtil.isPar(4));
 	}
-
+	
+	@Test
+	public void deveSerImpar() {
+		Assert.assertFalse(NumeroUtil.isPar(3));
+	}
+	
 }

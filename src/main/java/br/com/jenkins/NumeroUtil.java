@@ -1,6 +1,6 @@
 package br.com.jenkins;
 
-public class NumeroUtil {
+abstract class NumeroUtil {
 	
 	public static boolean isPositivo(Integer numero) {
 		if (isZero(numero)) return false;

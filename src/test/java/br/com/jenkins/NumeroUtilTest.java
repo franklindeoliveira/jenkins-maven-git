@@ -6,28 +6,23 @@ import org.junit.Test;
 public class NumeroUtilTest {
 	
 	@Test
-	public void deveSerPositivo() {
-		Assert.assertTrue(NumeroUtil.isPositivo(4));
+	public void deveSerMaiorQueZero() {
+		Assert.assertTrue(NumeroUtil.isMaiorQueZero(1));
 	}
 	
 	@Test
-	public void naoDeveSerPositivo() {
-		Assert.assertFalse(NumeroUtil.isPositivo(-1));
+	public void naoDeveSerMaiorQueZero() {
+		Assert.assertFalse(NumeroUtil.isMaiorQueZero(-1));
 	}
 	
 	@Test
-	public void zeroNaoDeveSerPositivo() {
-		Assert.assertFalse(NumeroUtil.isPositivo(0));
+	public void deveSerMenorQueZero() {
+		Assert.assertTrue(NumeroUtil.isMenorQueZero(-1));
 	}
 	
 	@Test
-	public void deveSerNegativo() {
-		Assert.assertTrue(NumeroUtil.isNegativo(-1));
-	}
-	
-	@Test
-	public void naoDeveSerNegativo() {
-		Assert.assertFalse(NumeroUtil.isNegativo(1));
+	public void naoDeveSerMenorQueZero() {
+		Assert.assertFalse(NumeroUtil.isMenorQueZero(1));
 	}
 	
 	@Test

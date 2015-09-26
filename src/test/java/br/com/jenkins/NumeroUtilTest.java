@@ -7,7 +7,7 @@ public class NumeroUtilTest {
 	
 	@Test
 	public void deveSerPar() {
-		Assert.assertEquals(NumeroUtil.isPar(4), true);
+		Assert.assertTrue(NumeroUtil.isPar(4));
 	}
 
 }

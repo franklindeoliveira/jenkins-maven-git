@@ -16,6 +16,11 @@ public class NumeroUtilTest {
 	}
 	
 	@Test
+	public void zeroNaoDeveSerPositivo() {
+		Assert.assertFalse(NumeroUtil.isPositivo(0));
+	}
+	
+	@Test
 	public void deveSerNegativo() {
 		Assert.assertTrue(NumeroUtil.isNegativo(-1));
 	}

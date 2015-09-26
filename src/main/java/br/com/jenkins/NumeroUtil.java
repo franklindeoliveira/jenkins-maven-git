@@ -3,11 +3,16 @@ package br.com.jenkins;
 public class NumeroUtil {
 	
 	public static boolean isPositivo(Integer numero) {
+		if (isZero(numero)) return false;
 		return numero > 0;
 	}
 	
-	public static boolean isPar(Integer numero) {
-		return numero % 2 == 0;
+	public static boolean isNegativo(Integer numero) {
+		return !isPositivo(numero);
+	}
+	
+	public static boolean isZero(Integer numero) {
+		return numero == 0;
 	}
 
 }
